@@ -1,0 +1,314 @@
+/*
+  Theme Name: AIM Digital Media
+  Theme Author: The Childress Agency
+  Theme Author URI: https://childressagency.com
+  Version: 2.0
+*/
+
+/*
+This CSS resource incorporates links to font software which is the valuable copyrighted
+property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
+redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+Imaging with any questions regarding Web Fonts:  http://www.fonts.com
+*/
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=dd91e6b4-7120-4aeb-b350-3766f4e4bbd4");
+@font-face{
+  font-family:"AvenirNext";
+    src:url("Fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix") format("eot")
+  }
+@font-face{
+  font-family:"Avenir Next W01";
+  src:url("Fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix");
+  src:url("Fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix") format("eot"),url("Fonts/2cd55546-ec00-4af9-aeca-4a3cd186da53.woff2") format("woff2"),url("Fonts/1e9892c0-6927-4412-9874-1b82801ba47a.woff") format("woff"),url("Fonts/46cf1067-688d-4aab-b0f7-bd942af6efd8.ttf") format("truetype"),url("Fonts/52a192b1-bea5-4b48-879f-107f009b666f.svg#52a192b1-bea5-4b48-879f-107f009b666f") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face{
+  font-family:"AvenirNext";
+    src:url("Fonts/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix") format("eot")
+  }
+@font-face{
+  font-family:"Avenir Next W01";
+  src:url("Fonts/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix");
+  src:url("Fonts/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix") format("eot"),url("Fonts/627fbb5a-3bae-4cd9-b617-2f923e29d55e.woff2") format("woff2"),url("Fonts/f26faddb-86cc-4477-a253-1e1287684336.woff") format("woff"),url("Fonts/63a74598-733c-4d0c-bd91-b01bffcd6e69.ttf") format("truetype"),url("Fonts/a89d6ad1-a04f-4a8f-b140-e55478dbea80.svg#a89d6ad1-a04f-4a8f-b140-e55478dbea80") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+
+body{
+  font-family:"AvenirNext", sans-serif;
+  font-weight:500;
+  font-size:16px;
+}
+
+a{
+  -webkit-transition:all .3s ease;
+  transition:all .3s ease;
+}
+
+.btn-main{
+  display:inline-block;
+  font-size:28px;
+  color:#2b2e4a;
+  font-family:"Exo 2", sans-serif;
+  text-transform:uppercase;
+  font-weight:500;
+  background-color:#e1e331;
+  padding:5px 70px;
+  border-radius:16px;
+  box-shadow:2px 2px 6px #000;
+  position:relative;
+  z-index:99;
+  margin-top:40px;
+  letter-spacing:4px;
+}
+.btn-main:hover,
+.btn-main:focus{
+  background-color:#fff;
+  text-decoration:none;
+}
+
+.overlay{
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  background-color:#000;
+  opacity:.4;
+}
+
+#header-nav{
+  background-color:#2b2e4a;
+  padding-top:10px;
+  padding-bottom:5px;
+}
+#header-nav.navbar{
+  margin-bottom:0;
+  border-radius:0;
+  border:none;
+}
+#header-nav.navbar-inverse .navbar-nav>li>a,
+#header-nav.navbar-inverse .navbar-nav>li.active>a{
+  color:#fff;
+  text-transform:uppercase;
+  position:relative;
+  background-color:transparent;
+}
+/*
+#header-nav.navbar-inverse .navbar-nav>li>a:hover,
+#header-nav.navbar-inverse .navabr-nav>li>a:focus,
+#header-nav.navbar-inverse .navbar-nav>.active>a, 
+#header-nav.navbar-inverse .navbar-nav>.active>a:focus, 
+#header-nav.navbar-inverse .navbar-nav>.active>a:hover{
+  background-color:transparent;
+  color:#fff;
+  border-top:4px solid #e1e331;
+}*/
+#header-nav.navbar-inverse .navbar-nav>li>a:before{
+  content:"";
+  position:absolute;
+  height:4px;
+  width:0;
+  left:50%;
+  top:0;
+  background-color:#e1e331;
+  -webkit-transition:all .3s ease;
+  transition:all .3s ease;
+}
+#header-nav.navbar-inverse .navbar-nav>li.active>a:before,
+#header-nav.navbar-inverse .navbar-nav>li>a:hover:before,
+#header-nav.navbar-inverse .navbar-nav>li>a:focus:before{
+  width:100%;
+  left:0;
+}
+#header-nav .navbar-toggle{
+  border-color:#fff;
+}
+
+.hp-hero{
+  position:relative;
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center center;
+}
+.hp-hero h1{
+  position:relative;
+  z-index:3;
+  font-size:70px;
+  font-family:"Exo 2", sans-serif;
+  font-weight:700;
+  text-shadow:2px 2px 6px #000;
+  color:#fff;
+  padding-top:20%;
+  padding-bottom:20%;
+  font-size:40px;
+  text-align:right;
+}
+
+.main{
+  padding-top:80px;
+  padding-bottom:80px;
+}
+.split{
+  margin-top:40px;
+}
+.split.text-side h2{
+  margin-top:0;
+  font-size:32px;
+  font-family:"Exo 2", sans-serif;
+  font-weight:700;
+}
+.split.text-side h3{
+  font-size:26px;
+  font-family:"Exo 2", sans-serif;
+  font-weight:500;
+  text-transform:uppercase;
+  margin-top:0;
+}
+.split hr{
+  width:40%;
+  border-color:#c2ddeb;
+  border-width:2px;
+  margin-left:0;
+  margin-right:auto;
+}
+
+#learn-more{
+  padding-top:80px;
+  padding-bottom:80px;
+  text-align:center;
+  position:relative;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+#learn-more h2{
+  font-size:50px;
+  color:#fff;
+  font-family:"Exo 2", sans-serif;
+  text-transform:uppercase;
+  text-shadow:2px 2px 6px #000;
+  font-weight:700;
+  position:relative;
+  z-index:3;
+  letter-spacing:4px;
+}
+
+#by-location{
+  background-color:#aed2e4;
+  padding-top:40px;
+  padding-bottom:80px;
+}
+
+#fleet{
+  padding-top:40px;
+  padding-bottom:80px;
+}
+
+#get-started{
+  padding-top:80px;
+  padding-bottom:80px;
+  text-align:center;
+  color:#fff;
+  position:relative;
+}
+#get-started .container{
+  position:relative;
+  z-index:3;
+}
+#get-started h2{
+  font-size:32px;
+  font-family:"Exo 2", sans-serif;
+  font-weight:500;
+  margin-top:0;
+  margin-bottom:40px;
+}
+
+footer{
+  background-color:#2b2e4a;
+  color:#fff;
+  padding-top:40px;
+  padding-bottom:60px;
+  text-align:center;
+  font-size:12px;
+}
+#footer-nav .navbar-nav{
+  margin-top:-10px;
+}
+#footer-nav .navbar-nav>li{
+  float:none;
+}
+#footer-nav .navbar-nav>li>a{
+  color:#fff;
+  text-transform:uppercase;
+}
+#footer-nav .navbar-nav>li.active>a,
+#footer-nav .navbar-nav>li>a:hover,
+#footer-nav .navbar-nav>li>a:focus{
+  color:#e1e331;
+  background-color:transparent;
+}
+footer hr{
+  border-color:#b4b637;
+  border-width:1px;
+  margin-top:0px;
+  max-width:80%;
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+}
+footer .copyright{
+  margin-top:25px;
+}
+footer .copyright>p{
+  margin-bottom:0;
+}
+footer .copyright a{
+  color:#fff;
+}
+footer .copyright a:hover,
+footer .copyright a:focus{
+  color:#e1e331;
+  text-decoration:none;
+}
+footer .social>a{
+  font-size:20px;
+  color:#fff;
+  padding:10px;
+}
+footer .social>a:hover,
+footer .social>a:focus{
+  color:#e1e331;
+}
+
+
+@media (max-width:767px){
+  #header-nav .nav>li>a{
+    display:inline-block;
+    padding-left:0;
+    margin-left:15px;
+  }
+  .header-logo>img{
+    margin-left:15px;
+    float:left;
+  }
+}
+@media (min-width:768px){
+  .container-sm-height{
+    display:table;
+  }
+  .row-sm-height{
+    display:table-row;
+  }
+  .col-sm-height{
+    display:table-cell;
+    float:none;
+    vertical-align:middle;
+  }
+  .hp-hero h1{
+    max-width:60%;
+    font-size:70px;
+    margin-left:auto;
+    margin-right:0;
+  }
+}
