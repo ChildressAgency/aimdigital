@@ -436,15 +436,16 @@ hr{
   color:#000;
 }
 
-h1.page-title{
+article h1{
   font-size:32px;
   font-family:"Exo 2", sans-serif;
   font-weight:700;
 }
-h3.page-subtitle{
+article h3{
   font-family:"Exo 2", sans-serif;
   font-weight:400;
   font-size:26px;
+  text-transform:uppercase;
 }
 
 #main{
@@ -492,10 +493,36 @@ h3.page-subtitle{
   text-transform:uppercase;
   text-align:center;
 }
-#job-application .form-control{
+.form-control{
   border:none;
   border-radius:0;
 }
+
+#main.contact-page{
+  padding-top:0;
+  padding-bottom:0;
+}
+#main.contact-page .contact-form-wrapper{
+  max-width:415px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-top:40px;
+  padding-bottom:40px;
+}
+#main.contact-page .contact-form-wrapper article h1{
+  margin-top:0;
+}
+#main.contact-page .col-sm-6{
+  background-color:#aed2e4;
+}
+.contact-form .form-group{
+  margin-bottom:5px;
+}
+.contact-form h3{
+  font-family:"Exo 2", sans-serif;
+  text-transform:uppercase;
+}
+
 
 footer{
   background-color:#2b2e4a;
@@ -591,6 +618,15 @@ footer .social>a:focus{
     display:table-cell;
     float:none;
     vertical-align:middle;
+  }
+  .container-fluid.container-sm-height{
+    width:100%;
+    padding-left:0;
+    padding-right:0;
+  }
+  .container-fluid.container-sm-height>.row{
+    margin-left:0;
+    margin-right:0;
   }
   .hp-hero h1{
     max-width:60%;
