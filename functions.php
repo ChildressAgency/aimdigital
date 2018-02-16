@@ -287,7 +287,7 @@ function aimdigital_header_fallback_menu(){ ?>
   </div>
 <?php }
 
-function aimgdigital_footer_fallback_menu(){ ?>
+function aimdigital_footer_fallback_menu(){ ?>
   <ul class="nav navbar-nav nav-justified">
     <li><a href="<?php echo home_url(); ?>">Home</a></li>
     <li><a href="<?php echo home_url('facts-figures'); ?>">Facts & Figures</a></li>

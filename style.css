@@ -663,6 +663,11 @@ footer .social>a:focus{
   color:#e1e331;
 }
 
+.google-map iframe{
+  height:550px;
+  width:100%;
+}
+
 
 @media (max-width:767px){
   #header-nav .nav>li>a{
