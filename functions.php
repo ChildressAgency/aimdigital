@@ -26,6 +26,14 @@ function aimdigital_scripts(){
   );
 
   wp_register_script(
+    'jquery-libs',
+    get_template_directory_uri() . '/js/jquery.libs.min.js',
+    array('jquery'),
+    '',
+    true
+  );
+
+  wp_register_script(
     'fontawesome',
     '//use.fontawesome.com/004c3c54fb.js',
     array('jquery'),
@@ -42,6 +50,7 @@ function aimdigital_scripts(){
   ); 
   
   wp_enqueue_script('bootstrap-script');
+  wp_enqueue_script('jquery-libs');
   wp_enqueue_script('fontawesome');
   wp_enqueue_script('aimdigital-scripts');  
 }
@@ -267,3 +276,24 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 		}
 	}
 }
+
+function aimdigital_header_fallback_menu(){ ?>
+  <div id="navbar" class="navbar-collapse collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li<?php if(is_page('about')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('about'); ?>">About</a></li>
+      <li<?php if(is_page('facts-figures')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('facts-figures'); ?>">Facts & Figures</a></li>
+      <li<?php if(is_page('contact')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('contact'); ?>">Contact</a></li>
+    </ul>
+  </div>
+<?php }
+
+function aimgdigital_footer_fallback_menu(){ ?>
+  <ul class="nav navbar-nav nav-justified">
+    <li><a href="<?php echo home_url(); ?>">Home</a></li>
+    <li><a href="<?php echo home_url('facts-figures'); ?>">Facts & Figures</a></li>
+    <li><a href="<?php echo home_url('software'); ?>">Software</a></li>
+    <li><a href="<?php echo home_url('about'); ?>">About</a></li>
+    <li><a href="<?php echo home_url('contact'); ?>">Contact</a></li>
+    <li><a href="<?php echo home_url('careers'); ?>">Careers</a></li>
+  </ul> 
+<?php }
