@@ -298,6 +298,9 @@ hr{
   background-size:cover;
   padding-top:60px;
   padding-bottom:60px;
+  height:480px;
+  background-attachment:fixed;
+  background-position:center center;
 }
 #icon-cards>.container{
   z-index:2;
