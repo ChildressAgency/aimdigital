@@ -11,7 +11,7 @@
             </article>
           </div>
         </div>
-        <div class="col-sm-6 col-sm-height">
+        <div class="col-sm-6 col-sm-height map-side">
           <div class="google-map">
             <?php the_field('location', 'option'); ?>
           </div>

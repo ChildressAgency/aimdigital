@@ -28,7 +28,7 @@
   <section id="job-application">
     <div class="container">
       <h3>Job Application</h3>
-      <?php echo do_shortcode('[job-application]'); ?>
+      <?php echo do_shortcode('[contact-form-7 id="17" title="Job Application"]'); ?>
     </div>
   </section>
 <?php get_footer(); ?>

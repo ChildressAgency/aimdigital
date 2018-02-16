@@ -297,3 +297,13 @@ function aimdigital_footer_fallback_menu(){ ?>
     <li><a href="<?php echo home_url('careers'); ?>">Careers</a></li>
   </ul> 
 <?php }
+
+if(function_exists('acf_add_options_page')){
+  acf_add_options_page(array(
+    'page_title' => 'General Site Settings',
+    'menu_title' => 'General Settings',
+    'menu_slug' => 'general-settings',
+    'capability' => 'edit_posts',
+    'redirect' => false
+  ));
+}

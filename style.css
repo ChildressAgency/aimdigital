@@ -663,9 +663,20 @@ footer .social>a:focus{
   color:#e1e331;
 }
 
-.google-map iframe{
-  height:550px;
+.map-side{
+  position:relative;
+}
+.google-map{
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
   width:100%;
+}
+.google-map iframe{
+  height:100%;
+  width:100%;
+  min-height:550px;
 }
 
 
