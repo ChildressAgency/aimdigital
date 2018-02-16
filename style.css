@@ -183,7 +183,7 @@ a{
 }
 
 .main{
-  padding-top:60px;
+  padding-top:40px;
   padding-bottom:80px;
 }
 .split{
@@ -440,6 +440,7 @@ article h1{
   font-size:32px;
   font-family:"Exo 2", sans-serif;
   font-weight:700;
+  margin-top:0;
 }
 article h3{
   font-family:"Exo 2", sans-serif;
@@ -523,8 +524,84 @@ article h3{
   text-transform:uppercase;
 }
 
+#did-you-know{
+  padding-top:40px;
+  padding-bottom:80px;
+}
+#did-you-know .intro{
+  text-align:center;
+  margin-bottom:40px;
+}
+#did-you-know h1{
+  font-family:"Exo 2", sans-serif;
+  font-size:32px;
+  font-weight:700;
+  text-transform:uppercase;
+  margin-top:0;
+}
+.fact-card{
+  margin-top:40px;
+  max-width:455px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.fact-card>h3{
+  font-size:26px;
+  font-family:"Exo 2", sans-serif;
+  text-transform:uppercase;
+}
+
 #technology{
   background-color:#aed2e4;
+  padding-top:40px;
+  padding-bottom:60px;
+}
+#technology h1{
+  font-size:32px;
+  font-family:"Exo 2", sans-serif;
+  font-weight:700;
+  margin-top:0;
+}
+#technology .intro h3{
+  font-family:"Exo 2", sans-serif;
+  font-size:26px;
+  text-transform:uppercase;
+}
+#technology .table>caption{
+  font-size:20px;
+  font-weight:800;
+  text-transform:uppercase;
+  color:#000;
+}
+#technology .table>tbody>tr>td, 
+#technology .table>tbody>tr>th, 
+#technology .table>tfoot>tr>td, 
+#technology .table>tfoot>tr>th, 
+#technology .table>thead>tr>td, 
+#technology .table>thead>tr>th{
+  border-color:#c2ddeb;
+}
+#technology .table>tbody>tr>td, 
+#technology .table>tfoot>tr>td, 
+#technology .table>thead>tr>td{
+  font-weight:600;
+}
+.tech-sidebar{
+  background-color:#2b2e4a;
+  color:#fff;
+  padding:25px 25px;
+}
+.tech-sidebar>h3{
+  font-size:20px;
+  font-weight:700;
+  text-transform:uppercase;
+  margin-top:0;
+}
+.tech-sidebar>ul{
+  list-style-image:url(images/bullet-icon.png);
+}
+.tech-sidebar>ul>li{
+  margin-bottom:15px;
 }
 
 
@@ -537,7 +614,7 @@ footer{
   font-size:12px;
 }
 #footer-nav .navbar-nav{
-  margin-top:-10px;
+  margin:0;
 }
 #footer-nav .navbar-nav>li{
   float:none;
@@ -610,6 +687,17 @@ footer .social>a:focus{
   #team-carousel .carousel-caption{
     top:0;
   }
+  .footer-logo>img{
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:40px;
+  }
+  #learn-more h2{
+    font-size:34px;
+  }
+  .btn-main{
+    font-size:22px;
+  }
 }
 @media (min-width:768px){
   .container-sm-height{
@@ -644,5 +732,8 @@ footer .social>a:focus{
   .about-hero .container-fluid{
     padding-left:0;
     padding-right:0;
+  }
+  #footer-nav .navbar-nav{
+    margin-top:-10px;
   }
 }
